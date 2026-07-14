@@ -57,11 +57,7 @@ This project aims to answer the following business questions:
 4. Total Industries
 
 ### Interactive Filters
-
-1. Year
-2. Country
-3. Industry
-4. Stage
+Date : Month/Year
 
 ### Visualizations
 
