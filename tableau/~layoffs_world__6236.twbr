@@ -1,0 +1,1956 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0603.1643                               -->
+<workbook original-version='18.1' source-build='2026.2.0 (20262.26.0603.1643)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneFriendlyName />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='clean_data (training)' inline='true' name='federated.0qm9r9c16t5tef1e8rkwj1sw08du' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='localhost' name='mysql.16a50540vf8fbn1dy4jgc19r3xbx'>
+            <connection class='mysql' dbname='training' odbc-native-protocol='' one-time-sql='' port='3306' server='localhost' source-charset='' username='root' />
+          </named-connection>
+        </named-connections>
+        <relation connection='mysql.16a50540vf8fbn1dy4jgc19r3xbx' name='clean_data' table='[clean_data]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>company</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[company]</local-name>
+            <parent-name>[clean_data]</parent-name>
+            <remote-alias>company</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[clean_data_DFB5CFF5E80B450E925B1B380C2D1CFE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[location]</local-name>
+            <parent-name>[clean_data]</parent-name>
+            <remote-alias>location</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[clean_data_DFB5CFF5E80B450E925B1B380C2D1CFE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>industry</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[industry]</local-name>
+            <parent-name>[clean_data]</parent-name>
+            <remote-alias>industry</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[clean_data_DFB5CFF5E80B450E925B1B380C2D1CFE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_laid_off</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[total_laid_off]</local-name>
+            <parent-name>[clean_data]</parent-name>
+            <remote-alias>total_laid_off</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[clean_data_DFB5CFF5E80B450E925B1B380C2D1CFE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percentage_laid_off</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[percentage_laid_off]</local-name>
+            <parent-name>[clean_data]</parent-name>
+            <remote-alias>percentage_laid_off</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[clean_data_DFB5CFF5E80B450E925B1B380C2D1CFE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[clean_data]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+            </attributes>
+            <object-id>[clean_data_DFB5CFF5E80B450E925B1B380C2D1CFE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stage</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[stage]</local-name>
+            <parent-name>[clean_data]</parent-name>
+            <remote-alias>stage</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[clean_data_DFB5CFF5E80B450E925B1B380C2D1CFE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[clean_data]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[clean_data_DFB5CFF5E80B450E925B1B380C2D1CFE]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>funds_raised_millions</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[funds_raised_millions]</local-name>
+            <parent-name>[clean_data]</parent-name>
+            <remote-alias>funds_raised_millions</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[clean_data_DFB5CFF5E80B450E925B1B380C2D1CFE]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Avg Layoffs / Company' datatype='real' name='[Calculation_0428557556604933]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([total_laid_off])/COUNTD([company])' />
+      </column>
+      <column caption='clean_data' datatype='table' name='[__tableau_internal_object_id__].[clean_data_DFB5CFF5E80B450E925B1B380C2D1CFE]' role='measure' type='quantitative' />
+      <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Funds Raised Millions' datatype='integer' name='[funds_raised_millions]' role='measure' type='quantitative' />
+      <column caption='Industry' datatype='string' name='[industry]' role='dimension' type='nominal' />
+      <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+      <column aggregation='Sum' datatype='real' datatype-customized='true' name='[percentage_laid_off]' role='dimension' type='quantitative' />
+      <column caption='Stage' datatype='string' name='[stage]' role='dimension' type='nominal' />
+      <column caption='Total Laid Off' datatype='integer' name='[total_laid_off]' role='measure' type='quantitative' />
+      <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:country:nk]' palette='tableau10_10_0' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Colombia&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Myanmar&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Argentina&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Brazil&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Israel&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Bulgaria&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;India&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Lithuania&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Switzerland&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Germany&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Finland&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Norway&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Denmark&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Luxembourg&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Thailand&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;United Kingdom&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Indonesia&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Senegal&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Australia&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Italy&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;South Korea&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Hungary&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Romania&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Singapore&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Chile&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Malaysia&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Turkey&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;France&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Pakistan&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;United States&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Poland&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Russia&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Ireland&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Seychelles&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;China&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Egypt&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;New Zealand&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Vietnam&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Netherlands&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Mexico&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;United Arab Emirates&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Austria&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Canada&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Japan&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Spain&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Hong Kong&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Portugal&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Estonia&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Nigeria&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Sweden&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Kenya&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Indonesia&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='clean_data' id='clean_data_DFB5CFF5E80B450E925B1B380C2D1CFE'>
+            <properties context=''>
+              <relation connection='mysql.16a50540vf8fbn1dy4jgc19r3xbx' name='clean_data' table='[clean_data]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <shared-views>
+    <shared-view name='federated.0qm9r9c16t5tef1e8rkwj1sw08du'>
+      <datasources>
+        <datasource caption='clean_data (training)' name='federated.0qm9r9c16t5tef1e8rkwj1sw08du' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0qm9r9c16t5tef1e8rkwj1sw08du'>
+        <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+        <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[yr:date:ok]'>
+        <groupfilter function='level-members' level='[yr:date:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Layoffs_trend'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Segoe UI' fontsize='10'> Layoffs Trend</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_data (training)' name='federated.0qm9r9c16t5tef1e8rkwj1sw08du' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qm9r9c16t5tef1e8rkwj1sw08du'>
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[date]' derivation='Month' name='[mn:date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[total_laid_off]' derivation='Sum' name='[sum:total_laid_off:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Laid Off' datatype='integer' name='[total_laid_off]' role='measure' type='quantitative' />
+            <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[mn:date:ok]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[mn:date:ok]' />
+              <groupfilter function='member' level='[mn:date:ok]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[yr:date:ok]</column>
+            <column>[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[mn:date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[sum:total_laid_off:qk]' field-type='quantitative' max='201560' min='-26212' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[yr:date:ok]' value='86' />
+            <format attr='width' field='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[mn:date:ok]' value='86' />
+            <format attr='border-color' value='#000000' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='20' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[sum:total_laid_off:qk]' palette='blue_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f0e3d3' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[sum:total_laid_off:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='759' />
+                <format attr='maxwidth' value='759' />
+                <format attr='minheight' value='585' />
+                <format attr='maxheight' value='585' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[sum:total_laid_off:qk]</rows>
+        <cols>[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[mn:date:ok]</cols>
+      </table>
+      <simple-id uuid='{8B730ADD-4F3E-46AD-8173-5B8BEC94CDD5}' />
+    </worksheet>
+    <worksheet name='avg_lay_company'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>average</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_data (training)' name='federated.0qm9r9c16t5tef1e8rkwj1sw08du' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qm9r9c16t5tef1e8rkwj1sw08du'>
+            <column caption='Avg Layoffs / Company' datatype='real' name='[Calculation_0428557556604933]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([total_laid_off])/COUNTD([company])' />
+            </column>
+            <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Total Laid Off' datatype='integer' name='[total_laid_off]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_0428557556604933]' derivation='User' name='[usr:Calculation_0428557556604933:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[yr:date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[usr:Calculation_0428557556604933:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontalignment='0'>Average Layoffs / Company : &lt;</run>
+                <run fontalignment='0'>[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[usr:Calculation_0428557556604933:qk]</run>
+                <run fontalignment='0'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{9E7AF227-D3DF-4DA3-991F-0BE2F24346B1}' />
+    </worksheet>
+    <worksheet name='t_company'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>t_company</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_data (training)' name='federated.0qm9r9c16t5tef1e8rkwj1sw08du' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0qm9r9c16t5tef1e8rkwj1sw08du'>
+            <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+            <column-instance column='[company]' derivation='CountD' name='[ctd:company:qk]' pivot='key' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[yr:date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='vertical-align' value='auto' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='auto' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffee33' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[ctd:company:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true'>Total Company :  &lt;</run>
+                <run bold='true'>[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[ctd:company:qk]</run>
+                <run bold='true'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='wrap' value='on' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{510C3754-3220-477B-84EA-B1EE9BD4D13D}' />
+    </worksheet>
+    <worksheet name='t_country'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_data (training)' name='federated.0qm9r9c16t5tef1e8rkwj1sw08du' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0qm9r9c16t5tef1e8rkwj1sw08du'>
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[country]' derivation='CountD' name='[ctd:country:qk]' pivot='key' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[yr:date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+            <format attr='border-color' value='#000000' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='color' value='#2e87f6' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-color' scope='cols' value='#000000' />
+            <format attr='border-width' scope='cols' value='1' />
+            <format attr='border-width' data-class='subtotal' scope='cols' value='0' />
+            <format attr='vertical-align' data-class='total' value='center' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' scope='rows' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='vertical-align' scope='cols' value='center' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffee33' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[ctd:country:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#000000'>Total Country : &lt;</run>
+                <run bold='true' fontcolor='#000000'>[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[ctd:country:qk]</run>
+                <run bold='true' fontcolor='#000000'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{2D7C5DAB-BEAF-4429-8145-B83543326A90}' />
+    </worksheet>
+    <worksheet name='t_industry'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>t_industry</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_data (training)' name='federated.0qm9r9c16t5tef1e8rkwj1sw08du' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qm9r9c16t5tef1e8rkwj1sw08du'>
+            <column-instance column='[industry]' derivation='CountD' name='[ctd:industry:qk]' pivot='key' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Industry' datatype='string' name='[industry]' role='dimension' type='nominal' />
+            <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[yr:date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffee33' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[ctd:industry:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true'>Total Industry   : &lt;</run>
+                <run bold='true'>[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[ctd:industry:qk]</run>
+                <run bold='true'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{34EAE054-249F-4049-B9DA-50FBA26E7DC6}' />
+    </worksheet>
+    <worksheet name='t_layoffs'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_data (training)' name='federated.0qm9r9c16t5tef1e8rkwj1sw08du' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qm9r9c16t5tef1e8rkwj1sw08du'>
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[total_laid_off]' derivation='Sum' name='[sum:total_laid_off:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Laid Off' datatype='integer' name='[total_laid_off]' role='measure' type='quantitative' />
+            <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[yr:date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffee33' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[sum:total_laid_off:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true'>Total Layoffs : &lt;</run>
+                <run bold='true'>[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[sum:total_laid_off:qk]</run>
+                <run bold='true'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{CB13B1C0-83DE-40F0-BF9A-FF144EE4CE57}' />
+    </worksheet>
+    <worksheet name='top_company'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_data (training)' name='federated.0qm9r9c16t5tef1e8rkwj1sw08du' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qm9r9c16t5tef1e8rkwj1sw08du'>
+            <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[company]' derivation='None' name='[none:company:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_laid_off]' derivation='Sum' name='[sum:total_laid_off:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Laid Off' datatype='integer' name='[total_laid_off]' role='measure' type='quantitative' />
+            <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[none:company:nk]'>
+            <groupfilter count='5' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([total_laid_off])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:company:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[none:company:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[sum:total_laid_off:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[none:company:nk]</column>
+            <column>[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[yr:date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[sum:total_laid_off:qk]' field-type='quantitative' max='21842' min='-127' range-type='fixed' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[sum:total_laid_off:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[none:company:nk]' value='88' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='32' />
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[sum:total_laid_off:qk]' num-steps='5' palette='orange_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f0e3d3' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='1' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-color' value='#000000' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-color' scope='rows' value='#000000' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[sum:total_laid_off:qk]' />
+              <color column='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[sum:total_laid_off:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.77961325645446777' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[sum:total_laid_off:qk]</rows>
+        <cols>[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[none:company:nk]</cols>
+      </table>
+      <simple-id uuid='{9E3C0618-C34A-4B72-AFA1-C6BBC567B6AD}' />
+    </worksheet>
+    <worksheet name='top_country'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_data (training)' name='federated.0qm9r9c16t5tef1e8rkwj1sw08du' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0qm9r9c16t5tef1e8rkwj1sw08du'>
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_laid_off]' derivation='Sum' name='[sum:total_laid_off:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Laid Off' datatype='integer' name='[total_laid_off]' role='measure' type='quantitative' />
+            <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[none:country:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([total_laid_off])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[none:country:nk]</column>
+            <column>[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[yr:date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[Longitude (generated)]' field-type='quantitative' max='18613837.186975021' min='-18310795.983333156' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[Latitude (generated)]' field-type='quantitative' max='15851899.692694295' min='-3660113.2331863716' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[none:country:nk]' />
+              <text column='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[none:country:nk]' />
+              <text column='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[sum:total_laid_off:qk]' />
+              <geometry column='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[Geometry (generated)]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[sum:total_laid_off:qk]</run>
+                <run>&gt;&#10;&lt;</run>
+                <run>[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[none:country:nk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='0.07596684992313385' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[Latitude (generated)]</rows>
+        <cols>[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{42E85109-D1B2-46C9-8958-B8CC4E2DE8E9}' />
+    </worksheet>
+    <worksheet name='top_industry'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_data (training)' name='federated.0qm9r9c16t5tef1e8rkwj1sw08du' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qm9r9c16t5tef1e8rkwj1sw08du'>
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Industry' datatype='string' name='[industry]' role='dimension' type='nominal' />
+            <column-instance column='[industry]' derivation='None' name='[none:industry:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_laid_off]' derivation='Sum' name='[sum:total_laid_off:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Laid Off' datatype='integer' name='[total_laid_off]' role='measure' type='quantitative' />
+            <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[none:industry:nk]'>
+            <groupfilter count='5' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([total_laid_off])' function='order' user:ui-marker='order'>
+                <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='member' level='[none:industry:nk]' member='&quot;Aerospace&quot;' />
+                  <groupfilter function='member' level='[none:industry:nk]' member='&quot;Construction&quot;' />
+                  <groupfilter function='member' level='[none:industry:nk]' member='&quot;Consumer&quot;' />
+                  <groupfilter function='member' level='[none:industry:nk]' member='&quot;Crypto&quot;' />
+                  <groupfilter function='member' level='[none:industry:nk]' member='&quot;Data&quot;' />
+                  <groupfilter function='member' level='[none:industry:nk]' member='&quot;Education&quot;' />
+                  <groupfilter function='member' level='[none:industry:nk]' member='&quot;Energy&quot;' />
+                  <groupfilter function='member' level='[none:industry:nk]' member='&quot;Fin-Tech&quot;' />
+                  <groupfilter function='member' level='[none:industry:nk]' member='&quot;Finance&quot;' />
+                  <groupfilter function='member' level='[none:industry:nk]' member='&quot;Fitness&quot;' />
+                  <groupfilter function='member' level='[none:industry:nk]' member='&quot;Food&quot;' />
+                  <groupfilter function='member' level='[none:industry:nk]' member='&quot;Hardware&quot;' />
+                  <groupfilter function='member' level='[none:industry:nk]' member='&quot;Healthcare&quot;' />
+                  <groupfilter function='member' level='[none:industry:nk]' member='&quot;HR&quot;' />
+                  <groupfilter function='member' level='[none:industry:nk]' member='&quot;Infrastructure&quot;' />
+                  <groupfilter function='member' level='[none:industry:nk]' member='&quot;Legal&quot;' />
+                  <groupfilter function='member' level='[none:industry:nk]' member='&quot;Logistics&quot;' />
+                  <groupfilter function='member' level='[none:industry:nk]' member='&quot;Manufacturing&quot;' />
+                  <groupfilter function='member' level='[none:industry:nk]' member='&quot;Marketing&quot;' />
+                  <groupfilter function='member' level='[none:industry:nk]' member='&quot;Media&quot;' />
+                  <groupfilter function='member' level='[none:industry:nk]' member='&quot;Other&quot;' />
+                  <groupfilter function='member' level='[none:industry:nk]' member='&quot;Product&quot;' />
+                  <groupfilter function='member' level='[none:industry:nk]' member='&quot;Real Estate&quot;' />
+                  <groupfilter function='member' level='[none:industry:nk]' member='&quot;Recruiting&quot;' />
+                  <groupfilter function='member' level='[none:industry:nk]' member='&quot;Retail&quot;' />
+                  <groupfilter function='member' level='[none:industry:nk]' member='&quot;Sales&quot;' />
+                  <groupfilter function='member' level='[none:industry:nk]' member='&quot;Security&quot;' />
+                  <groupfilter function='member' level='[none:industry:nk]' member='&quot;Support&quot;' />
+                  <groupfilter function='member' level='[none:industry:nk]' member='&quot;Transportation&quot;' />
+                  <groupfilter function='member' level='[none:industry:nk]' member='&quot;Travel&quot;' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[none:industry:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[sum:total_laid_off:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[none:industry:nk]</column>
+            <column>[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[yr:date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[sum:total_laid_off:qk]' field-type='quantitative' max='56182' min='-479' range-type='fixed' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[sum:total_laid_off:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[none:industry:nk]' value='90' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='44' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[sum:total_laid_off:qk]' num-steps='5' palette='orange_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f0e3d3' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-color' scope='cols' value='#000000' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='rows' value='1' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[sum:total_laid_off:qk]' />
+              <color column='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[sum:total_laid_off:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='top' />
+                <format attr='wrap' value='on' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='0.84558010101318359' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[sum:total_laid_off:qk]</rows>
+        <cols>[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[none:industry:nk]</cols>
+      </table>
+      <simple-id uuid='{34B71788-7F14-4C25-92DF-93B1F3CECA93}' />
+    </worksheet>
+    <worksheet name='top_stage'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_data (training)' name='federated.0qm9r9c16t5tef1e8rkwj1sw08du' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qm9r9c16t5tef1e8rkwj1sw08du'>
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[stage]' derivation='None' name='[none:stage:nk]' pivot='key' type='nominal' />
+            <column caption='Stage' datatype='string' name='[stage]' role='dimension' type='nominal' />
+            <column-instance column='[total_laid_off]' derivation='Sum' name='[sum:total_laid_off:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Laid Off' datatype='integer' name='[total_laid_off]' role='measure' type='quantitative' />
+            <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[none:stage:nk]'>
+            <groupfilter count='5' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([total_laid_off])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:stage:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[none:stage:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[sum:total_laid_off:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[none:stage:nk]</column>
+            <column>[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[yr:date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[none:stage:nk]' value='143' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[sum:total_laid_off:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.076464056968689' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[sum:total_laid_off:qk]</rows>
+        <cols>[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[none:stage:nk]</cols>
+      </table>
+      <simple-id uuid='{DC72F610-7D8C-4F2A-B832-9633D6ECB645}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97872' id='34' param='horz' type-v2='layout-flow' w='98890' x='555' y='1064'>
+            <zone h='97872' id='31' param='horz' type-v2='layout-flow' w='98890' x='555' y='1064'>
+              <zone h='97872' id='28' param='horz' type-v2='layout-flow' w='98890' x='555' y='1064'>
+                <zone h='97872' id='24' param='horz' type-v2='layout-flow' w='98890' x='555' y='1064'>
+                  <zone h='97872' id='19' param='horz' type-v2='layout-flow' w='98890' x='555' y='1064'>
+                    <zone h='97872' id='17' type-v2='layout-basic' w='98890' x='555' y='1064'>
+                      <zone friendly-name='Header - H' h='10930' id='6' param='vert' type-v2='layout-flow' w='98890' x='555' y='1064'>
+                        <zone forceUpdate='true' h='10107' id='7' type-v2='text' w='98752' x='624' y='1197'>
+                          <formatted-text>
+                            <run bold='true' fontcolor='#72b966' fontname='Gill Sans Ultra Bold' fontsize='14'>🌍</run>
+                            <run bold='true' fontcolor='#59a14f' fontname='Gill Sans Ultra Bold' fontsize='14'>Æ </run>
+                            <run bold='true' fontcolor='#499894' fontname='Gill Sans Ultra Bold' fontsize='14'>GLOBAL LAYOFFS DASHBOARD</run>
+                            <run>Æ&#10;</run>
+                            <run bold='true' fontcolor='#000000' fontname='Gill Sans Ultra Bold' fontsize='12'>       Analyze Worldwide Layoffs 2020-2023</run>
+                            <run>Æ&#10;</run>
+                          </formatted-text>
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='solid' />
+                          <format attr='border-width' value='1' />
+                        </zone-style>
+                      </zone>
+                      <zone friendly-name='KPI - H' h='86942' id='8' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='98890' x='555' y='11994'>
+                        <zone h='86702' id='9' name='t_country' show-title='false' w='24705' x='625' y='12101'>
+                          <layout-cache fixed-size-h='83' type-h='fixed' type-w='fixed' />
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='solid' />
+                            <format attr='border-width' value='1' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                        <zone h='86702' id='10' name='t_company' show-title='false' w='24705' x='25330' y='12101'>
+                          <layout-cache type-h='fixed' type-w='fixed' />
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='solid' />
+                            <format attr='border-width' value='1' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                        <zone h='86702' id='11' name='t_industry' show-title='false' w='24705' x='50035' y='12101'>
+                          <layout-cache type-h='fixed' type-w='fixed' />
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='solid' />
+                            <format attr='border-width' value='1' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                        <zone h='86702' id='12' name='t_layoffs' show-title='false' w='24635' x='74740' y='12101'>
+                          <layout-cache type-h='fixed' type-w='fixed' />
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='solid' />
+                            <format attr='border-width' value='1' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='solid' />
+                          <format attr='border-width' value='1' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1250' minheight='1250' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='38' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97872' id='37' param='vert' type-v2='layout-flow' w='98890' x='555' y='1064'>
+                <zone forceUpdate='true' h='10107' id='7' type-v2='text' w='98752' x='624' y='1197'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#72b966' fontname='Gill Sans Ultra Bold' fontsize='14'>🌍</run>
+                    <run bold='true' fontcolor='#59a14f' fontname='Gill Sans Ultra Bold' fontsize='14'>Æ </run>
+                    <run bold='true' fontcolor='#499894' fontname='Gill Sans Ultra Bold' fontsize='14'>GLOBAL LAYOFFS DASHBOARD</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Gill Sans Ultra Bold' fontsize='12'>       Analyze Worldwide Layoffs 2020-2023</run>
+                    <run>Æ&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='86702' id='9' is-fixed='true' name='t_country' show-title='false' w='24705' x='625' y='12101'>
+                  <layout-cache fixed-size-h='83' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='86702' id='10' is-fixed='true' name='t_company' show-title='false' w='24705' x='25330' y='12101'>
+                  <layout-cache type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='86702' id='11' is-fixed='true' name='t_industry' show-title='false' w='24705' x='50035' y='12101'>
+                  <layout-cache type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='86702' id='12' is-fixed='true' name='t_layoffs' show-title='false' w='24635' x='74740' y='12101'>
+                  <layout-cache type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{0AC713F6-F9FE-4A2F-9483-9CC03007807F}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='clean_data (training)' name='federated.0qm9r9c16t5tef1e8rkwj1sw08du' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0qm9r9c16t5tef1e8rkwj1sw08du'>
+        <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+        <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97750' id='26' param='horz' type-v2='layout-flow' w='98200' x='900' y='1125'>
+            <zone h='97750' id='24' param='horz' type-v2='layout-flow' w='98200' x='900' y='1125'>
+              <zone h='97750' id='21' param='horz' type-v2='layout-flow' w='98200' x='900' y='1125'>
+                <zone h='97750' id='17' param='horz' type-v2='layout-flow' w='98200' x='900' y='1125'>
+                  <zone h='97750' id='14' param='horz' type-v2='layout-flow' w='98200' x='900' y='1125'>
+                    <zone h='97750' id='12' type-v2='layout-basic' w='98200' x='900' y='1125'>
+                      <zone h='6858' id='3' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='98200' x='900' y='10223'>
+                        <zone h='6875' id='6' name='t_country' show-title='false' w='24600' x='900' y='10250'>
+                          <layout-cache fixed-size-h='83' fixed-size-w='162' type-h='fixed' type-w='fixed' />
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='solid' />
+                            <format attr='border-width' value='1' />
+                            <format attr='margin' value='4' />
+                            <format attr='background-color' value='#f88ca4' />
+                          </zone-style>
+                        </zone>
+                        <zone h='6875' id='7' name='t_company' show-title='false' w='24600' x='25500' y='10250'>
+                          <layout-cache fixed-size-w='200' type-h='fixed' type-w='fixed' />
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='solid' />
+                            <format attr='border-width' value='1' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                        <zone h='6875' id='8' name='t_industry' show-title='false' w='24500' x='50100' y='10250'>
+                          <layout-cache fixed-size-w='180' type-h='fixed' type-w='fixed' />
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='solid' />
+                            <format attr='border-width' value='1' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                        <zone h='6875' id='9' name='t_layoffs' show-title='false' w='24500' x='74600' y='10250'>
+                          <layout-cache fixed-size-w='220' type-h='fixed' type-w='fixed' />
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='solid' />
+                            <format attr='border-width' value='1' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                      </zone>
+                      <zone forceUpdate='true' h='9098' id='5' type-v2='text' w='98200' x='900' y='1125'>
+                        <formatted-text>
+                          <run bold='true' fontcolor='#72b966' fontname='Gill Sans Ultra Bold' fontsize='10'>🌍</run>
+                          <run bold='true' fontcolor='#59a14f' fontname='Gill Sans Ultra Bold' fontsize='10'>Æ </run>
+                          <run bold='true' fontcolor='#499894' fontname='Gill Sans Ultra Bold' fontsize='10'>GLOBAL LAYOFFS DASHBOARD</run>
+                          <run>Æ&#10;</run>
+                          <run bold='true' fontcolor='#000000' fontname='Gill Sans Ultra Bold' fontsize='12'>Æ    </run>
+                          <run bold='true' fontcolor='#000000' fontname='Segoe UI' fontsize='8'>Analyze Worldwide Layoffs 2020-2023</run>
+                        </formatted-text>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='solid' />
+                          <format attr='border-width' value='1' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='28125' id='10' param='horz' type-v2='layout-flow' w='98200' x='900' y='70750'>
+                        <zone h='28125' id='11' name='top_company' show-title='false' w='49100' x='900' y='70750'>
+                          <layout-cache cell-count-w='5' minheight='206' type-h='scalable' type-w='cell' />
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='solid' />
+                            <format attr='border-width' value='1' />
+                            <format attr='margin' value='4' />
+                            <format attr='background-color' value='#ffee33' />
+                          </zone-style>
+                        </zone>
+                        <zone h='28125' id='15' name='top_industry' show-title='false' w='49100' x='50000' y='70750'>
+                          <layout-cache cell-count-w='5' type-h='fixed' type-w='cell' />
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='solid' />
+                            <format attr='border-width' value='1' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                      </zone>
+                      <zone h='22419' id='18' name='top_country' show-title='false' w='98200' x='900' y='17081'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='solid' />
+                          <format attr='border-width' value='1' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='31250' id='19' name='Layoffs_trend' w='86400' x='900' y='39500'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='solid' />
+                          <format attr='border-width' value='1' />
+                          <format attr='margin' value='4' />
+                          <format attr='background-color' value='#f0e3d3' />
+                        </zone-style>
+                      </zone>
+                      <zone h='31250' id='27' name='Layoffs_trend' param='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[yr:date:ok]' type-v2='filter' values='database' w='11800' x='87300' y='39500'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='solid' />
+                          <format attr='border-width' value='1' />
+                          <format attr='margin' value='4' />
+                          <format attr='background-color' value='#f0e3d3' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='margin' value='8' />
+            <format attr='background-color' value='#f0e3d3' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1250' minheight='1250' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='31' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='30' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone forceUpdate='true' h='9098' id='5' type-v2='text' w='98200' x='900' y='1125'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#72b966' fontname='Gill Sans Ultra Bold' fontsize='10'>🌍</run>
+                    <run bold='true' fontcolor='#59a14f' fontname='Gill Sans Ultra Bold' fontsize='10'>Æ </run>
+                    <run bold='true' fontcolor='#499894' fontname='Gill Sans Ultra Bold' fontsize='10'>GLOBAL LAYOFFS DASHBOARD</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontname='Gill Sans Ultra Bold' fontsize='12'>Æ    </run>
+                    <run bold='true' fontcolor='#000000' fontname='Segoe UI' fontsize='8'>Analyze Worldwide Layoffs 2020-2023</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='45' h='6875' id='6' is-fixed='true' name='t_country' show-title='false' w='24600' x='900' y='10250'>
+                  <layout-cache fixed-size-h='83' fixed-size-w='162' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#f88ca4' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='45' h='6875' id='7' is-fixed='true' name='t_company' show-title='false' w='24600' x='25500' y='10250'>
+                  <layout-cache fixed-size-w='200' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='45' h='6875' id='8' is-fixed='true' name='t_industry' show-title='false' w='24500' x='50100' y='10250'>
+                  <layout-cache fixed-size-w='180' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='45' h='6875' id='9' is-fixed='true' name='t_layoffs' show-title='false' w='24500' x='74600' y='10250'>
+                  <layout-cache fixed-size-w='220' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='169' h='22419' id='18' is-fixed='true' name='top_country' show-title='false' w='98200' x='900' y='17081'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='31250' id='27' mode='checkdropdown' name='Layoffs_trend' param='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[yr:date:ok]' type-v2='filter' values='database' w='11800' x='87300' y='39500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#f0e3d3' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='240' h='31250' id='19' is-fixed='true' name='Layoffs_trend' w='86400' x='900' y='39500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#f0e3d3' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='215' h='28125' id='11' is-fixed='true' name='top_company' show-title='false' w='49100' x='900' y='70750'>
+                  <layout-cache cell-count-w='5' minheight='206' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffee33' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='215' h='28125' id='15' is-fixed='true' name='top_industry' show-title='false' w='49100' x='50000' y='70750'>
+                  <layout-cache cell-count-w='5' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='1' />
+                <format attr='margin' value='8' />
+                <format attr='background-color' value='#f0e3d3' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{EA5B7A88-C83E-4F3F-B16E-EB2A6FF1EB9B}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' name='t_country'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B1F76040-FABE-4877-B775-7AA53956988D}' />
+    </window>
+    <window class='worksheet' name='t_company'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{4A231461-FF6D-40F0-9D07-118C080B72C2}' />
+    </window>
+    <window class='worksheet' name='t_industry'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3EB109DC-A8D6-4927-B578-2137C9E22BE6}' />
+    </window>
+    <window class='worksheet' name='t_layoffs'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{25C609E3-4457-4F37-B135-B5099E535E5C}' />
+    </window>
+    <window class='worksheet' name='avg_lay_company'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D21F51D8-7BBD-4B40-AB4F-AA895CD7E85A}' />
+    </window>
+    <window class='worksheet' name='Layoffs_trend'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F5DAB01B-EC9E-483D-B033-AD3EEA4BADBA}' />
+    </window>
+    <window class='worksheet' maximized='true' name='top_country'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{773743EE-2369-4A6C-B429-A69FDDE27BC9}' />
+    </window>
+    <window class='worksheet' name='top_company'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0B8A2F52-87DB-4617-899E-6B3F538E337F}' />
+    </window>
+    <window class='worksheet' name='top_industry'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0qm9r9c16t5tef1e8rkwj1sw08du].[none:industry:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-height' />
+      </viewpoint>
+      <simple-id uuid='{90CC0A51-27A2-478F-A04B-E326D286E962}' />
+    </window>
+    <window class='worksheet' name='top_stage'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6FD2BE07-B28F-48E4-B1C3-961D010E08AB}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2' tab-color='#dec77b'>
+      <viewpoints>
+        <viewpoint name='Layoffs_trend'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='t_company'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='t_country'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='t_industry'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='t_layoffs'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='top_company'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='top_country'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+        <viewpoint name='top_industry'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{FEC04E03-B536-43C2-A8B9-CF2B23432038}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='t_company'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='t_country'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='t_industry'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='t_layoffs'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='7' />
+      <device-preview visible='true' />
+      <simple-id uuid='{2E10FBA3-A48E-4CAC-95EE-428318F27A4D}' />
+    </window>
+  </windows>
+</workbook>
